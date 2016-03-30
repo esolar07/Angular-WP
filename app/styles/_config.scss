@@ -1,0 +1,23 @@
+
+
+$base-font-size: 16px;       // base font size for site
+
+
+// Width of the content area / device
+$content-width:    800px;
+$on-palm:          60
+0px;
+$on-laptop:        800px;
+
+
+/* Responsive: Portrait tablets and up */
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+// px to em converter function
+@function em($t, $c:$base-font-size){
+  @return ($t / $c) * 1em;
+}
