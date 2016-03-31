@@ -1,3 +1,13 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
 
 html, body{
   width: 100%;
@@ -15,7 +25,7 @@ body {
   padding-bottom: 20px;
 }
 
-// compass mixing to unstyle links
+// compass mixin to unstyle links
 a{
   @include unstyled-link;
 }
@@ -57,16 +67,6 @@ a{
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
 
 /* Supporting marketing content */
 .marketing {

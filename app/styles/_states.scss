@@ -1,0 +1,9 @@
+
+// when item is hovered, it expands & displays txt
+.is-nav-item-hov:hover{
+  background:green;
+  .is-tooltip-hov{
+    display: block;
+    visibility: visible;
+  }
+}

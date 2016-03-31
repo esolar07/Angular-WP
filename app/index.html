@@ -22,12 +22,24 @@
     <!-- Add your site or application content here -->
     <main class="l-container">
       <div class="l-header">
+        <h3 class="text-muted">ES</h3>
         <ul class="nav">
-          <li class="active nav__item"><a ng-href="#">Home</a></li>
-          <li class="nav__item"><a ng-href="#/about">About</a></li>
-          <li class="nav__item"><a ng-href="#">Contact</a></li>
+          <li class="active nav__item is-nav-item-hov">
+            <span class="nav__tooltip is-tooltip-hov">
+              <a ng-href="#">Home</a>
+            </span>
+          </li>
+          <li class="nav__item is-nav-item-hov">
+            <span class="nav__tooltip is-tooltip-hov">
+              <a ng-href="#/about">About</a>
+            </span>
+          </li>
+          <li class="nav__item is-nav-item-hov">
+            <span class="nav__tooltip is-tooltip-hov">
+              <a ng-href="#">Contact</a>
+            </span>
+          </li>
         </ul>
-        <h3 class="text-muted">profile</h3>
       </div>
 
       <div ng-view=""></div>
