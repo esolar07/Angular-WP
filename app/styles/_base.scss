@@ -16,6 +16,7 @@ dl, dd, ol, ul, figure {
 html, body{
   width: 100%;
   box-sizing: border-box;
+  background: $page-bg;
 }
 
 *, *::before, *::after{
@@ -36,8 +37,7 @@ a{
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
-.footer {
+.marketing{
   padding-left: 15px;
   padding-right: 15px;
   /* Responsive: Portrait tablets and up */
@@ -94,9 +94,5 @@ a{
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
