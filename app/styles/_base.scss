@@ -16,7 +16,8 @@ dl, dd, ol, ul, figure {
 html, body{
   width: 100%;
   box-sizing: border-box;
-  background: $page-bg;
+  color: $page-text-color;
+  background: url(http://republica.net/wp-content/themes/rep-2015/img/dothatch.png), $page-bg, url('../images/me2.png') no-repeat center 30%;
 }
 
 *, *::before, *::after{
@@ -25,7 +26,6 @@ html, body{
 
 /* Space out content a bit */
 body {
-
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -35,6 +35,9 @@ a{
   @include unstyled-link;
 }
 
+h1{
+	color: $header-text-color
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing{

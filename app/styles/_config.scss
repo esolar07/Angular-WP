@@ -2,9 +2,10 @@
 
 $base-font-size:   16px;       // base font size for site
 
-$page-bg: linear-gradient(left,rgba(green, .5), rgba(blue, .5));
+$page-bg: linear-gradient(left,rgba(#00FFFF, .7), rgba(#90EE90, .7));
 $header-bottom-border: linear-gradient(black, transparent 90%);
-
+$header-text-color: white;
+$page-text-color: white;
 
 // Width of the content area / device
 $content-width:    800px;
