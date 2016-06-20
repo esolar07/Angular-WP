@@ -57,42 +57,14 @@ browsehappy {
 
 // intro
 
-
-.intro{
-	&__header{
-		margin-bottom: 150px;
-	}
-	&__name{
-		margin-bottom: 25px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Main  message and buttons */
 .intro {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  &__header{
+	margin-bottom: 150px;
+  }
   &__name{
+	margin-bottom: 25px;
     font-family: fantasy;
     font-weight: bolder;
     font-size: em(64px);
@@ -101,4 +73,8 @@ browsehappy {
     font-size: 21px;
     padding: 14px 24px;
   }
+  &__text{
+		font-size: em(26px);
+		font-weight: bold;
+	}
 }
