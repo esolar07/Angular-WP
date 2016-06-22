@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:400,500,700|Pacifico);
 
 
 $base-font-size:   16px;       // base font size for site
@@ -6,6 +7,9 @@ $page-bg: linear-gradient(left,rgba(#00FFFF, .6), rgba(#90EE90, .6));
 $header-bottom-border: linear-gradient(black, transparent 90%);
 $header-text-color: white;
 $page-text-color: white;
+$header-font: 'Pacifico', cursive;
+$page-font-1: 'Noto Sans', sans-serif;
+$page-font-2: 'Roboto', sans-serif;
 
 // Width of the content area / device
 $content-width:    800px;

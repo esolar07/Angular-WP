@@ -65,9 +65,10 @@ browsehappy {
   }
   &__name{
 	margin-bottom: 25px;
-    font-family: fantasy;
-    font-weight: bolder;
-    font-size: em(64px);
+    font-family: $header-font;
+    font-weight: 400;
+    font-style: italic;
+    font-size: em(80px);
   }
   .btn {
     font-size: 21px;
@@ -77,4 +78,7 @@ browsehappy {
 		font-size: em(26px);
 		font-weight: bold;
 	}
+  &__body{
+    padding-top: 105px;
+  }
 }

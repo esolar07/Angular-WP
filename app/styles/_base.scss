@@ -16,6 +16,7 @@ dl, dd, ol, ul, figure {
 html, body{
   width: 100%;
   box-sizing: border-box;
+  font-family: $page-font-2;
   color: $page-text-color;
   background: url(http://republica.net/wp-content/themes/rep-2015/img/dothatch.png), $page-bg, url('../images/me2.png') no-repeat center 30%;
 }
@@ -25,10 +26,11 @@ html, body{
 }
 
 /* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+//body {
+//  padding-top: 20px;
+//  padding-bottom: 20px;
+//}
+
 
 // compass mixin to unstyle links
 a{
