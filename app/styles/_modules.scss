@@ -1,6 +1,6 @@
 
 // nag bar of <= ie7
-browsehappy {
+.browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -70,15 +70,29 @@ browsehappy {
     font-style: italic;
     font-size: em(80px);
   }
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
   &__text{
 		font-size: em(26px);
 		font-weight: bold;
 	}
   &__body{
     padding-top: 105px;
+  }
+}
+
+
+.btn{
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 75px;
+  border: 2px solid white;
+  border-radius: 5px;
+  &__link{
+    padding-top: 25%;
+    font-size: em(25px);
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
   }
 }
