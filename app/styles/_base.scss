@@ -1,6 +1,6 @@
 
 // including Compass reset mixing
-@include global-reset;
+// @include global-reset;
 
 /**
  * Reset some basic elements
@@ -34,7 +34,7 @@ html, body{
 
 // compass mixin to unstyle links
 a{
-  @include unstyled-link;
+  //@include unstyled-link;
 }
 
 h1{

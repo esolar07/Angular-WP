@@ -1,60 +1,164 @@
-/*
-Error: File to import not found or unreadable: compass.
-        on line 5 of main.scss
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:400,500,700|Pacifico);
+/* Responsive: Portrait tablets and up */
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
 
-1: // bower:scss
-2: // endbower
-3: 
-4: // importing compass libray
-5: @import "compass";
-6: 
-7: // importing partials
-8: @import "config";
-9: @import "base";
-10: @import "layout";
+html, body {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background: url(http://republica.net/wp-content/themes/rep-2015/img/dothatch.png), linear-gradient(top left, rgba(0, 255, 255, 0.6) 40%, rgba(144, 238, 144, 0.6) 80%, rgba(238, 232, 170, 0.6) 100%), url("../images/me2.png") no-repeat center 30%; }
 
-Backtrace:
-main.scss:5
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A         on line 5 of main.scss\A \A 1: // bower:scss\A 2: // endbower\A 3: \A 4: // importing compass libray\A 5: @import \"compass\";\A 6: \A 7: // importing partials\A 8: @import \"config\";\A 9: @import \"base\";\A 10: @import \"layout\";"; }
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+/* Space out content a bit */
+h1 {
+  color: black; }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Responsive: Portrait tablets and up */ }
+  @media screen and (min-width: 768px) {
+    .header,
+    .marketing {
+      padding-left: 0px;
+      padding-right: 0px; } }
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0; }
+  .marketing p + h4 {
+    margin-top: 28px; }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px; } }
+.l-container {
+  width: 100%; }
+
+.l-header {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 150px; }
+
+.l-footer {
+  margin-top: 60%;
+  width: 100%;
+  height: 75px;
+  text-align: left; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto; }
+  .nav__item {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+    font-size: 1em;
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: all 1.5s; }
+  .nav__tooltip {
+    display: none;
+    position: relative;
+    top: 40px;
+    left: -25px;
+    padding: 10px 20px;
+    width: 75px;
+    height: 35px;
+    text-align: center;
+    transition: all 2s;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    transition: all 2s; }
+    .nav__tooltip::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 18px;
+      width: 0;
+      height: 0;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid white;
+      border-left: 20px solid transparent; }
+
+/* Main  message and buttons */
+.intro {
+  text-align: center; }
+  .intro__header {
+    margin-bottom: 150px; }
+  .intro__name {
+    margin-bottom: 25px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 5em; }
+  .intro__text {
+    font-size: 1.625em;
+    font-weight: bold; }
+  .intro__body {
+    padding-top: 105px; }
+
+.btn {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 75px;
+  border: 2px solid white;
+  border-radius: 5px; }
+  .btn__link {
+    padding-top: 25%;
+    font-size: 1.5625em;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase; }
+
+.is-nav-item-hov:hover {
+  background: green; }
+  .is-nav-item-hov:hover .is-tooltip-hov {
+    display: block;
+    visibility: visible; }
+
+/*# sourceMappingURL=main.css.map */

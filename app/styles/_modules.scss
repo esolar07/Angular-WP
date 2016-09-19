@@ -24,7 +24,7 @@
     border: 5px solid white;
     border-radius: 50%;
     transition: all 1.5s;
-    @include no-bullet;
+    // @include no-bullet;
   }
   &__tooltip{
     display: none;
