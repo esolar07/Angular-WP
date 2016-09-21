@@ -13,15 +13,20 @@ html, body {
   width: 100%;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: black;
   background: url(http://republica.net/wp-content/themes/rep-2015/img/dothatch.png), linear-gradient(top left, rgba(0, 255, 255, 0.6) 40%, rgba(144, 238, 144, 0.6) 80%, rgba(238, 232, 170, 0.6) 100%), url("../images/me2.png") no-repeat center 30%; }
 
 *, *::before, *::after {
   box-sizing: border-box; }
 
 /* Space out content a bit */
+a {
+  text-decoration: none; }
+
 h1 {
   color: black; }
+
+li {
+  list-style: none; }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -68,14 +73,20 @@ h1 {
 .l-header {
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
-  height: 150px; }
+  width: 100%;
+  height: 150px;
+  background: lightgrey; }
+  @media screen and (min-width: 768px) {
+    .l-header {
+      height: 300px; } }
 
 .l-footer {
   margin-top: 60%;
   width: 100%;
-  height: 75px;
-  text-align: left; }
+  height: 150px;
+  text-align: center;
+  color: white;
+  background: black; }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -88,40 +99,22 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 75px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  width: 80%;
+  /* Responsive: Portrait tablets and up */ }
+  @media screen and (min-width: 768px) {
+    .nav {
+      justify-content: flex-end;
+      margin-top: 120px; } }
   .nav__item {
     width: 25px;
     height: 25px;
     margin-right: 25px;
+    margin-left: 25px;
     font-size: 1em;
-    border: 5px solid white;
-    border-radius: 50%;
     transition: all 1.5s; }
-  .nav__tooltip {
-    display: none;
-    position: relative;
-    top: 40px;
-    left: -25px;
-    padding: 10px 20px;
-    width: 75px;
-    height: 35px;
-    text-align: center;
-    transition: all 2s;
-    background: white;
-    color: black;
-    border-radius: 5px;
-    transition: all 2s; }
-    .nav__tooltip::after {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 18px;
-      width: 0;
-      height: 0;
-      border-right: 20px solid transparent;
-      border-bottom: 20px solid white;
-      border-left: 20px solid transparent; }
 
 /* Main  message and buttons */
 .intro {

@@ -9,15 +9,21 @@
 .l-header{
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  width: 100%;
   height: 150px;
+  background: $header-bg-color;
   // border-bottom: solid 2px $header-bottom-border;
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
 }
 
 
 .l-footer{
   margin-top: 60%;
   width: 100%;
-  height: 75px;
-  text-align: left;
+  height: 150px;
+  text-align: center;;
+  color: $footer-text-color;
+  background: $footer-bg-color;
 }
