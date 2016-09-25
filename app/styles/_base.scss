@@ -17,7 +17,7 @@ html, body{
   width: 100%;
   box-sizing: border-box;
   font-family: $page-font-2;
-  background: url(http://republica.net/wp-content/themes/rep-2015/img/dothatch.png), $page-bg, url('../images/me2.png') no-repeat center 30%;
+  background: $page-bg;
 }
 
 *, *::before, *::after{
@@ -34,7 +34,19 @@ html, body{
 // compass mixin to unstyle links
 a{
   //@include unstyled-link;
-  text-decoration: none;
+  color: white;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    color:white;
+  }
+  &:active {
+    text-decoration: none;
+  }
 }
 
 h1{

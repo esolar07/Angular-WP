@@ -3,10 +3,10 @@
 
 $base-font-size:   16px;       // base font size for site
 
-$page-bg: linear-gradient(top left,rgba(#00FFFF, .6) 40% , rgba(#90EE90, .6) 80%, rgba(#EEE8AA, .6) 100%);
-$header-bg-color: lightgrey;
+$page-bg: grey;
+$header-bg-color: transparent;
 $header-bottom-border: linear-gradient(black, transparent 90%);
-$header-text-color: black;
+$header-text-color: white;
 $page-text-color: black;
 $header-font: 'Pacifico', cursive;
 $page-font-1: 'Noto Sans', sans-serif;

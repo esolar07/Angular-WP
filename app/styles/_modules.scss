@@ -13,14 +13,13 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-top: 75px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
-    justify-content: flex-end;
-    margin-top: 120px;
+    margin-top: 5px;
   }
   // nav element - BEM
   &__item{
@@ -28,7 +27,7 @@
     height: 25px;
     margin-right: 25px;
     margin-left: 25px;
-    font-size: em(16px);
+    font-size: em(20px);
     transition: all 1.5s;
     // @include no-bullet;
   }
@@ -39,12 +38,27 @@
 
 /* Main  message and buttons */
 .intro {
+  padding-top: 50px;
+  width: 100%;
   text-align: center;
+  &__bg{
+    position: absolute;
+    top:-6px;
+    width:100%;
+    min-height: 960px;
+    background: url('http://hawaiiseowebdesign.com/wp-content/uploads/2014/10/LytronHawaiiHome3NEW-031.jpg')  center center no-repeat;;
+    background-size: cover;
+    opacity: 0.2;
+  }
   &__header{
-	margin-bottom: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    z-index: 988;
+    opacity: 1 !important;
   }
   &__name{
-	  margin-bottom: 25px;
+	  margin-top: 100px;
     font-family: $header-font;
     font-weight: 400;
     font-style: italic;
@@ -64,7 +78,7 @@
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
-  width: 200px;
+  width: 250px;
   height: 75px;
   border: 2px solid white;
   border-radius: 5px;
