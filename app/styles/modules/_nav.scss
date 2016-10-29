@@ -1,0 +1,25 @@
+// nav bar
+.nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+  // nav element - BEM
+  &__item{
+    width:25px;
+    height: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: em(20px);
+    transition: all 1.5s;
+    // @include no-bullet;
+  }
+}

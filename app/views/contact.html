@@ -1,1 +1,39 @@
-<p>This is the contact view.</p>
+
+<section ng-controller="ContactCtrl as formtab" class="form-wrapper">
+  <!-- login form -->
+  <form class="form form--log" action="" ng-show="formtab.isSelected(1)">
+    <h1 class="form-header"> Volunteers </h1>
+    <label class="form__email-label" for="">E-MAIL</label>
+    <input class="form__input" type="text" placeholder="Email" required />
+    <input class="form__input" type="text" placeholder="Name" required />
+    <fieldset class="form__actions">
+      <input class="form__submit form__submit--login " type="submit" value="LOG IN">
+      <div class="form__reset">Reset Password</div>
+    </fieldset>
+  </form>
+  <!-- end login form -->
+
+  <!-- signup form -->
+  <form class="form form--su" action="" ng-show="formtab.isSelected(2)">
+    <h1 class="form-header">Nonprofits</h1>
+    <input class="form__input" type="text" placeholder="Name" required />
+    <input class="form__input" type="text" placeholder="Email" required />
+    <input class="form__input" type="text" placeholder="Organization Name" required />
+    <fieldset class="form__actions">
+      <input class="form__radio" type="radio" />
+      <div class="form__terms">
+        I agree with the payment <span>Terms & Conditions<span>
+      </div>
+      <input class="form__submit form__submit--su" type="submit" value="Email">
+    </fieldset>
+  </form>
+  <!-- end signup form -->
+
+  <div class="additional" ng-show="formtab.isSelected(1)">
+    Are you part of a nonprofit organization, <span ng-click="formtab.selectTab(2)">contact us.</span>
+  </div>
+  <div class="additional" ng-show="formtab.isSelected(2)">
+    A you looking to volunteer, <span ng-click="formtab.selectTab(1)">contact us.</span>
+  </div>
+
+</section>
