@@ -19,33 +19,38 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
+    <!-- page nav bar -->
     <main class="l-container">
       <header class="l-header">
         <div class="logo">
-          <h3 class="logo__img">ES</h3>
+          <h3 class="logo__img">TLS</h3>
         </div>
         <ul class="nav">
-          <li class="active nav__item is-nav-item-hov">
+          <li class=" nav__item is-nav-item-hov">
             <a ng-href="#">Home</a>
+            <div class="nav_underline"></div>
           </li>
           <li class="nav__item is-nav-item-hov">
             <a ng-href="#/about">About</a>
+            <div class="nav_underline"></div>
           </li>
           <li class="nav__item is-nav-item-hov">
             <a ng-href="#/contact">Contact</a>
+            <div class="nav_underline"></div>
           </li>
         </ul>
       </header>
+      <!-- page nav bar ends -->
 
+      <!-- page template  -->
       <div ng-view=""></div>
-
-
+      <!-- page template ends -->
+      <!-- page footer -->
       <footer class="l-footer">
-        <p><span class="glyphicon glyphicon-heart"></span>copyrighted by Eddie Solar</p>
+        <p><span class="glyphicon glyphicon-heart"></span>copyrighted by The Lemonade Stand</p>
         <p>Made with Angular.JS and WordPress</p>
       </footer>
-
+      <!-- page footer ends -->
     </main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

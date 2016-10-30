@@ -1,9 +1,28 @@
 
-// when item is hovered, it expands & displays txt
+// when nav item is hovered, underline is displayed
 .is-nav-item-hov:hover{
-  background:green;
-  .is-tooltip-hov{
-    display: block;
-    visibility: visible;
+  div{
+    animation: menuBorder 1s linear forwards;
   }
+  // .is-tooltip-hov{
+  //   display: block;
+  //   visibility: visible;
+  // }
+}
+
+// when button is hovered, background is displayed
+.is-btn-hovered:hover{
+  .btn__link{
+    color:$btnTxt2;
+    text-shadow: 0 0 1px $btnTxtSha;
+  }
+  &::before, &::after{
+    transform: rotate(0deg);
+    background:$btnBg;
+  }
+}
+
+@keyframes menuBorder {
+  0% {width:0px;}
+ 100% {width: 100px;}
 }
